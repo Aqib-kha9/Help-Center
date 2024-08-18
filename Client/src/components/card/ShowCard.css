@@ -1,0 +1,49 @@
+.card-container{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+
+.card{
+    height: 9rem;
+    width: 25.3rem ;
+    overflow: auto;
+    background-color: #eee;
+    
+}
+.card-title{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: large;
+}
+.card::-webkit-scrollbar{
+    display: none;
+}
+
+@media only screen and (max-width: 435px) {
+    .card{
+        height: 9rem;
+        width: 22.5rem ;
+        overflow: auto;
+        background-color: #eee;
+    }
+    .card-container{
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap:wrap;
+        gap: 2rem;
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        
+    }
+}

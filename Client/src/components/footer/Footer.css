@@ -1,0 +1,36 @@
+.footer-container{
+    height: 25rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ul{
+    list-style-type: none;
+    margin-top: 5rem;
+    gap: 2;
+}
+.ul img{
+    height: 2rem;
+}
+.copy{
+    margin-top: 13rem;
+}
+
+@media only screen and (max-width: 435px) {
+    .footer-container{
+        height: fit-content;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .ul{
+        list-style-type: none;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+
+}
