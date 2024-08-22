@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import CardDetail from './components/card/CardDetail';
 
 
+
 const App = () => {
   
   return (

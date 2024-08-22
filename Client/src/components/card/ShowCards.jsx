@@ -1,10 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect} from "react";
 import AppContext from "../../context/AppContext";
 import { Link } from "react-router-dom";
 import "./ShowCard.css";
+import Loading from '../loader/Loading';
 const ShowCards = () => {
   const { cards } = useContext(AppContext);
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    // Simulate an API call
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
   return (
     <>
       <div className="card-container">

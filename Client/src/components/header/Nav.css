@@ -33,6 +33,10 @@
     .btn{
         font-size: small;
     }
+    .left-container img{
+        width: 5rem;
+        height: 2rem;
+    }
 }
 
 

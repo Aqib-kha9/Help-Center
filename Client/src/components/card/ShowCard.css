@@ -30,7 +30,7 @@
 @media only screen and (max-width: 435px) {
     .card{
         height: 9rem;
-        width: 22.5rem ;
+        width: 21.5rem ;
         overflow: auto;
         background-color: #eee;
     }
@@ -44,6 +44,7 @@
         margin-bottom: 5rem;
         margin-left: 5rem;
         margin-right: 5rem;
+        min-height: 20vh;
         
     }
 }

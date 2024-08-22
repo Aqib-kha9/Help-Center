@@ -4,7 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast, Bounce} from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 const AppState = (props) => {
-  const url = "http://localhost:8080";
+  const url = "https://help-center-api-4ef1.onrender.com";
   const [cards, setCards] = useState([]);
   const [reload, setReaload] = useState(false);
 

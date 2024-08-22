@@ -14,6 +14,7 @@ const SearchBox = () => {
   return (
     <>
       <div className="hero">
+        
         <form onSubmit={searchHandler} className="inner-div">
           <p>How Can We Help?</p>
           <input

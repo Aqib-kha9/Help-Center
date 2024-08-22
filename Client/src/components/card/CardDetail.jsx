@@ -1,10 +1,13 @@
 import React, {useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import Loading from '../loader/Loading';
+
 
 const CardDetail = () => {
   const [card, setCard] = useState();
-  const url = "http://localhost:8080";
+  const [isLoading, setIsLoading] = useState(true);
+  const url = "https://help-center-api-4ef1.onrender.com";
 
   const { title } = useParams();
   console.log(title);
@@ -22,6 +25,17 @@ const CardDetail = () => {
 
     fetchCard();
   },[title]);
+
+  useEffect(() => {
+    // Simulate an API call
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <>
